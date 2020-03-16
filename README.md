@@ -1,5 +1,8 @@
 # 163music
 
+## api
+See [网易云音乐 Node.js API service](https://github.com/Binaryify/NeteaseCloudMusicApi).
+
 ## Project setup
 ```
 npm install
