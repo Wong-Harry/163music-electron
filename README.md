@@ -31,7 +31,9 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### 项目骨架
 
+```
 ├── package.json                     
 ├── README.md                            
 ├── jest.config.js
@@ -79,4 +81,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 │       └── unit
 │       └── electron.spec.js
 │       └── example.spec.js
-
+```
