@@ -1,7 +1,11 @@
 <template>
   <div class="playBox">
     <playInfo />
-    <h1>这是Player</h1>
+    <div class="playBtns">
+      <i class="iconfont icon-icon-17" />
+      <i class="iconfont icon-icon-18" />
+      <i class="iconfont icon-icon-15" />
+    </div>
     <BottomBtn />
   </div>
 </template>
@@ -27,5 +31,20 @@ export default {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+
+  .playBtns {
+    display: flex;
+    align-items: center;
+    i {
+      color: #4c4c4c;
+      font-size: 42px;
+      margin-left: 20px;
+
+      &:first-child,
+      &:last-child {
+        font-size: 32px;
+      }
+    }
+  }
 }
 </style>

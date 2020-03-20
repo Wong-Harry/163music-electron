@@ -1,5 +1,5 @@
 export { default as BottomPlayer } from './BottomPlayer/BottomPlayer.vue'
 export { default as Content } from './Content.vue'
 export { default as Player } from './Player.vue'
-export { default as Side } from './Side.vue'
+export { default as Side } from './SideBar/Side.vue'
 export { default as TopBar } from './TopBar.vue'

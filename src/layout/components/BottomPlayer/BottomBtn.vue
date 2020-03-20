@@ -2,7 +2,7 @@
   <div class="btnsBox">
     <i class="iconfont icon-icon-20" />
     <i class="iconfont icon-icon-29" />
-    <i class="iconfont icon-icon-31" />
+    <i class="iconfont icon-icon-16" />
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
   align-items: center;
   i {
     color: #4c4c4c;
-    font-size: 24px;
+    font-size: 26px;
     margin-left: 20px;
   }
 }

@@ -6,10 +6,12 @@
       </el-header>
 
       <el-container>
-        <el-aside width="200px">Aside</el-aside>
+        <el-aside width="200px">
+          <Side />
+        </el-aside>
         <el-container>
           <el-main>
-            Main
+            <Content />
             <el-button>123</el-button>
           </el-main>
         </el-container>
@@ -23,13 +25,15 @@
 </template>
 
 <script>
-import { TopBar, BottomPlayer } from '@/layout/components'
+import { TopBar, BottomPlayer, Side, Content } from '@/layout/components'
 
 export default {
   name: 'Main',
   components: {
     TopBar,
-    BottomPlayer
+    BottomPlayer,
+    Side,
+    Content
   }
 }
 </script>
@@ -53,7 +57,7 @@ export default {
 }
 
 .el-aside {
-  background-color: #d3dce6;
+  background-color: #e9e8e9;
   color: #333;
   text-align: center;
 }
