@@ -1,6 +1,7 @@
 <template>
   <div>
-    <!-- <el-menu background-color="#e9e8e9" active-text-color="#409eff" default-active="1">
+    <Mine />
+    <el-menu background-color="#e9e8e9" active-text-color="#409eff" default-active="1">
       <el-menu-item index="1">
         <i class="iconfont icon-icon-5" />
         <span slot="title">发现音乐</span>
@@ -36,16 +37,18 @@
       </el-menu-item>
 
       <MyCreateMusicList />
-    </el-menu>-->
+    </el-menu>
   </div>
 </template>
 
 <script>
-// import MyCreateMusicList from './MyCreateMusicList'
+import MyCreateMusicList from './MyCreateMusicList'
+import Mine from './Mine'
 export default {
   name: 'Side',
   components: {
-    // MyCreateMusicList
+    MyCreateMusicList,
+    Mine
   },
   data: function() {
     return {}
