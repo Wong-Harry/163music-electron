@@ -1,7 +1,11 @@
 <template>
   <div>
     <Mine />
-    <el-menu background-color="#e9e8e9" active-text-color="#409eff" default-active="1">
+    <el-menu
+      background-color="#e9e8e9"
+      active-text-color="#409eff"
+      default-active="1"
+    >
       <el-menu-item index="1">
         <i class="iconfont icon-icon-5" />
         <span slot="title">发现音乐</span>
@@ -56,7 +60,7 @@ export default {
 }
 </script>
 
-<style lang="scss" >
+<style lang="scss">
 .dockTitle {
   text-align: left;
 }

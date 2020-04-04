@@ -6,7 +6,7 @@
       </el-header>
 
       <el-container>
-        <el-aside width="200px">
+        <el-aside>
           <Side />
         </el-aside>
         <el-container>
@@ -39,6 +39,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/variable.scss';
+
 .app-wrapper {
   position: relative;
   height: 100vh;
@@ -49,6 +51,7 @@ export default {
   background-color: #f7f7f7;
   text-align: center;
   overflow: hidden;
+  height: $app-top-bar-height !important;
 }
 .el-footer {
   background-color: #ffffff;
@@ -58,6 +61,7 @@ export default {
 
 .el-aside {
   background-color: #e9e8e9;
+  width: $app-side-width !important;
   color: #333;
   text-align: center;
 }
