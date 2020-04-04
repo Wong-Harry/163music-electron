@@ -2,22 +2,22 @@
   <div class="pos-r">
     <div class="tips" @click="loginBox = !loginBox">
       <div class="header">
-        <img :src="$store.getters.userInfo.head" alt />
+        <img :src="$store.getters.userInfo.head" alt>
       </div>
       <div class="name">
         <span>{{ $store.getters.userInfo.nickname }}</span>
-        <i class="el-icon-arrow-right"></i>
+        <i class="el-icon-arrow-right" />
       </div>
     </div>
 
-    <div class="login-box" v-if="loginBox">
+    <div v-if="loginBox" class="login-box">
       <div>
         <label>手机</label>
-        <input type="phone" v-model="phone" placeholder="请输入电话" />
+        <input v-model="phone" type="phone" placeholder="请输入电话">
       </div>
       <div>
         <label>密码</label>
-        <input type="password" v-model="password" placeholder="请输入密码" />
+        <input v-model="password" type="password" placeholder="请输入密码">
       </div>
       <el-button type="primary" size="small" @click="login">登录</el-button>
     </div>
