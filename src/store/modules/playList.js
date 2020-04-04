@@ -5,7 +5,7 @@ const playList = {
     plsyProgress: '',
     musicInfo: ''
   },
-  mutations: {
+  mutathions: {
     SET_MUISCINFO: (state, musicInfo) => {
       state.musicInfo = musicInfo
     },
