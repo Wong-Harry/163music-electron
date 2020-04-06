@@ -2,7 +2,7 @@
   <div class="pos-r">
     <div class="tips" @click="loginBoxShow = !loginBoxShow">
       <div class="header">
-        <img :src="head" alt>
+        <img :src="head" alt />
       </div>
       <div class="name">
         <span>{{ nickname }}</span>
@@ -26,7 +26,7 @@ export default {
   computed: {
     head: function() {
       return this.$store.getters.userInfo
-        ? this.$store.getters.userInfo.head
+        ? this.$store.getters.userInfo.avatarUrl
         : ''
     },
     nickname: function() {
@@ -38,4 +38,29 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.tips {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  font-size: 16px;
+  .header {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .name {
+    i {
+      margin-left: 5px;
+    }
+  }
+}
+</style>

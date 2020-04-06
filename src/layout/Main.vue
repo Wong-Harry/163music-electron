@@ -53,6 +53,9 @@ export default {
   overflow: hidden;
   height: $app-top-bar-height !important;
 }
+.el-container{
+  max-height: $app-max-height !important;
+}
 .el-footer {
   background-color: #ffffff;
   text-align: center;
