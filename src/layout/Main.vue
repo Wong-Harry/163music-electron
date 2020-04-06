@@ -12,7 +12,6 @@
         <el-container>
           <el-main>
             <Content />
-            <el-button>123</el-button>
           </el-main>
         </el-container>
       </el-container>
@@ -63,8 +62,8 @@ export default {
 }
 
 .el-main {
-  background-color: #e9eef3;
   color: #333;
   text-align: center;
+  margin: 0 auto;
 }
 </style>
