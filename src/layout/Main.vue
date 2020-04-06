@@ -5,7 +5,7 @@
         <TopBar />
       </el-header>
 
-      <el-container>
+      <el-container class="app-main">
         <el-aside>
           <Side />
         </el-aside>
@@ -44,6 +44,12 @@ export default {
   position: relative;
   height: 100vh;
   width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.app-main {
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .el-header {
@@ -69,5 +75,7 @@ export default {
   color: #333;
   text-align: center;
   margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 </style>

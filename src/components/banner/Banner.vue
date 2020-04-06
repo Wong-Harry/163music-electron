@@ -1,29 +1,26 @@
 <template>
   <el-carousel :interval="5000" height="200px" type="card">
-    <el-carousel-item v-for="item in imgList" :key="item.targetId">
+    <el-carousel-item v-for="(item, index) in imgList" :key="index">
       <div class="imgBox">
-        <img :src="item.imageUrl" draggable="false" />
+        <img :src="item.imageUrl" draggable="false">
       </div>
     </el-carousel-item>
   </el-carousel>
 </template>
 
 <script>
-import { getBanner as getBannerUrl, privateContentMv } from '@/api/home'
+import { getBanner as getBannerUrl } from '@/api/home'
 
 export default {
   name: 'Banner',
   data() {
     return {
-      imgList: [],
-      mvList: []
+      imgList: []
     }
   },
   created() {
     // 获取轮播图
     this.getBanner()
-    // 获取推荐mv
-    this.getMv()
   },
   methods: {
     getBanner() {
@@ -31,16 +28,6 @@ export default {
         .then(response => {
           console.log('getBanner', response)
           this.imgList = response.banners
-        })
-        .catch(error => {
-          console.error(error)
-        })
-    },
-    getMv() {
-      privateContentMv()
-        .then(response => {
-          console.log('getMv', response)
-          this.mvList = response.result
         })
         .catch(error => {
           console.error(error)
